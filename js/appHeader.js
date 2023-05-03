@@ -59,7 +59,7 @@ export const createHeader = (city) => {
 
         try {
             const weather = await getWeatherData(searchInput.value);
-            console.log(weather);
+            // console.log(weather);
 
             if (weather.message) {
                 showError(weather.message);
